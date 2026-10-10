@@ -1,0 +1,40 @@
+tally_odbc:
+  dsn: "TallyODBC64_9000"
+  url: "http://localhost:9000"
+  connection_string: "DSN=TallyODBC64_9000;"
+  voucher_types:
+    - "Purchase"
+    - "Journal"
+
+ledgers_mapping:
+  purchase_ledgers:
+    - "Packing Material CGST @ 18%"
+    - "Packing Material SGST @ 5%"
+    - "Raw Material Purchase IGST @ 18%"
+    - "Raw Material Purchase SGST @ 18%"
+    - "Store & Consumable IGST @ 18%"
+    - "Store & Consumable SGST @ 18%"
+    - "Store & Consumable SGST @ 5%"
+    - "Printing & Staonery @18"
+    - "Social Media Advertisement CGST @ 18%"
+    - "Repair & Maintanance SGST @ 18%"
+  cgst_ledgers:
+    - "Input CGST 1.5%"
+    - "Input CGST 9%"
+    - "Input CGST @ 14%"
+    - "Input CGST @ 2.5%"
+    - "Input CGST@6%"
+  sgst_ledgers:
+    - "Input SGST 1.5%"
+    - "Input SGST 9%"
+    - "Input SGST @ 14%"
+    - "Input SGST @ 2.5%"
+    - "Input SGST@6%"
+  igst_ledgers:
+    - "Input IGST @ 12%"
+    - "Input IGST @ 18%"
+    - "Input IGST @ 5%"
+  tds_ledgers:
+    - "TDS - Section 194Q"
+  round_off_ledgers:
+    - "Round Off"
